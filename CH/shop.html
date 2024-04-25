@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH | Jewelry sales</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="js/shop.js" defer></script>
+    <link rel="shortcut icon" href="imgure/logotype/logowhite.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-hero">
+            <div class="search__hero">
+                <img src="imgure/icons/Vector.svg" class="logo__search__hero" alt="">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__hero">
+                    <input type="text" class="type_here__form" name="search" placeholder="Type here to search">
+                </form>
+                <img src="imgure/icons/burger.svg" class="burger" alt="">
+            </div>
+
+            <div class="logotype__hero">
+                <a href="index.html"><img src="imgure/logotype/logo.svg" class="logo__hero" alt=""></a>
+            </div>
+            <div class="nav__hero">
+                <nav class="hero__nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-item-text section__button"
+                                style="margin-right: 35px; cursor: pointer;">Login</a></li>
+                        <li class="nav-item"><a href class="nav-item-text">Cart</a></li>
+                        <a href="shop.html"><img src="imgure/icons/bag.svg" class="bag" alt=""></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-main">
+            <div class="container section-main">
+                <nav class="main__nav">
+                    <ul class="main-list">
+                        <li class="main-item"><a href class="main-item-text">What's News</a></li>
+                        <li class="main-item"><a href class="main-item-text">Chokers</a></li>
+                        <li class="main-item"><a href class="main-item-text">Necklaces</a></li>
+                        <li class="main-item"><a href class="main-item-text">Rings</a></li>
+                        <li class="main-item"><a href class="main-item-text">Earrings</a></li>
+                    </ul>
+                </nav>
+                <nav class="main__nav-burger">
+                    <ul class="main-list-burger">
+                        <div class="top_forms"
+                            style="display: flex;background-color: rgba(255, 255, 255, 0.15);padding-top: 10px;padding-bottom: 10px; border-radius: 50px;">
+                            <img src="imgure/icons/vectorwhite.svg" class="logo__search__hero__burger" style="margin-left: 10px;"
+                                alt="">
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                                class="form__hero__burger" style="width: 95%;">
+                                <input type="text" class="type_here__form__burger" style="width: 95%; outline: none;"
+                                    name="search">
+                            </form>
+                        </div>
+                        <li class="main-item-burger"><a href class="main-item-text-burger">What's News</a></li>
+                        <li class="main-item-burger"><a href class="main-item-text-burger">Chokers</a></li>
+                        <li class="main-item-burger"><a href class="main-item-text-burger">Necklaces</a></li>
+                        <li class="main-item-burger"><a href class="main-item-text-burger">Rings</a></li>
+                        <li class="main-item-burger"><a href class="main-item-text-burger">Earrings</a></li>
+                        <li class="subtitle-main-item-burger"><a href class="subtitle-item-text-burger">About CH</a>
+                        </li>
+                        <li class="subtitle-main-item-burger"><a href class="subtitle-item-text-burger">Stores &
+                                Hours</a></li>
+                        <li class="subtitle-main-item-burger"><a href class="subtitle-item-text-burger">Contact Us</a>
+                        </li>
+                        <li class="main-item-burger"><a class="main-item-text-burger section__button">Login</a></li>
+                    </ul>
+                </nav>
+                <div id="successModal" class="modal">
+                    <div class="modal__main">
+                        <img src="imgure/icons/image.jpg" alt="" style="width: 100%">
+                        <h2 class="modal__title">Log In</h2>
+
+                        <div class="modal__container">
+                            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__login">
+                                <input required type="email" class="modal__login__email" name="email"
+                                    placeholder="Your E-mail">
+                                <input required type="password" style="padding-top: 20px;"
+                                    class="modal__login__password" name="password" placeholder="Password">
+                                <a href
+                                    style="float: right; color: rgba(155, 153, 151, 1); font-family: 'Poppins'; font-size: 12px;">Forgot
+                                    your password?</a>
+                                <button type="submit" class="submit__login"
+                                    style="margin-top: 50px; font-family: 'Poppins'; font-size: 16px;">Log In</button>
+                            </form>
+                            <div class="testf"
+                                style="display: flex; align-items: center; justify-content: space-between;">
+                                <p style="color: rgba(155, 153, 151, 1)">Don't have an account?</p>
+                                <a href
+                                    style="float: right; font-family: 'Poppins'; font-size: 14px; color: rgba(29, 22, 19, 1); font-weight: bold;">Sign
+                                    Up</a>
+                            </div>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
+                    </div>
+                </div>
+                <div class="photo_main">
+                    <div class="descr_main">
+                        <p
+                            style="margin: 0; padding-top: 100px; font-size: 34px; font-weight: 700; font-family: 'Cormorant Garamond'; color: rgba(255, 255, 255, 1); text-align: center;">
+                            ALL JEWELLERY</p>
+                        <p
+                            style="margin: 0; font-size: 22px; font-style: italic; font-weight: 500; font-family: 'Cormorant Garamond'; color: rgba(255, 255, 255, 1); text-align: center;">
+                            Discover picks of fashion's finest trends in our jewellery catalog</p>
+                    </div>
+                </div>
+                <div class="all_categories" style="display: flex;">
+                    <div class="filtering">
+                        <div class="one-filter">
+                            <div class="left-filter">
+                                <p class="filter-p">Product</p>
+                                <li class="expand-text" style="display: none;">
+                                    <div class="item">
+                                        <div class="checkbox-rect">
+                                            <input type="checkbox" id="checkbox-rect1" name="check">
+                                            <label for="checkbox-rect1">Necklaces</label>
+                                            <input type="checkbox" id="checkbox-rect2" name="check">
+                                            <label for="checkbox-rect2">Chokers</label>
+                                            <input type="checkbox" id="checkbox-rect3" name="check">
+                                            <label for="checkbox-rect3">Rings</label>
+                                            <input type="checkbox" id="checkbox-rect4" name="check">
+                                            <label for="checkbox-rect4">Earrings</label>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="right-filter">
+                                <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                            </div>
+                        </div>
+                        <div class="two-filter">
+                            <div class="left-filter">
+                                <p class="filter-p">Material</p>
+                                <li class="expand-text" style="display: none;">
+                                    <div class="item">
+                                        <div class="checkbox-rect">
+                                            <input type="checkbox" id="checkbox-rect5" name="check">
+                                            <label for="checkbox-rect5">Gold</label>
+                                            <input type="checkbox" id="checkbox-rect6" name="check">
+                                            <label for="checkbox-rect6">Silver</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="right-filter">
+                                <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                            </div>
+                        </div>
+                        <div class="three-filter">
+                            <div class="left-filter">
+                                <p class="filter-p">Collection</p>
+                                <li class="expand-text" style="display: none;">
+                                    <div class="item">
+                                        <div class="checkbox-rect">
+                                            <input type="checkbox" id="checkbox-rect7" name="check">
+                                            <label for="checkbox-rect7">Pink flamingo</label>
+                                            <input type="checkbox" id="checkbox-rect8" name="check">
+                                            <label for="checkbox-rect8">Dream</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="right-filter">
+                                <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                            </div>
+                        </div>
+                        <div class="four-filter" style="margin-bottom: 30px;">
+                            <div class="left-filter">
+                                <p class="filter-p">Price</p>
+                                <li class="expand-text" style="display: none; padding-left: 28px;">
+                                    <div class="wrapper-price">
+                                        <div class="price-input">
+                                            <div class="field">
+                                                <span>Min</span>
+                                                <input type="number" class="input-min" value="55">
+                                            </div>
+                                            <div class="separator">-</div>
+                                            <div class="field">
+                                                <span>Max</span>
+                                                <input type="number" class="input-max" value="155">
+                                            </div>
+                                        </div>
+                                        <div class="slider">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="range-min" min="0" max="155" value="55" step="1">
+                                            <input type="range" class="range-max" min="0" max="155" value="155"
+                                                step="1">
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="right-filter">
+                                <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                            </div>
+                        </div>
+                        <button class="button_filter"
+                            style="cursor: pointer; background-color: rgba(168, 123, 98, 1); border: 0; font-family: 'Poppins'; font-size: 16px; line-height: 20.8px; text-align: center; color: white;">Apply</button>
+                        <button class="button_filter button_clear"
+                            style="cursor: pointer; margin-top: 30px; background-color: white; border: 1px solid rgba(168, 123, 98, 1); font-family: 'Poppins'; font-weight: 500; font-size: 16px; line-height: 20.8px; text-align: center; color: black;">Clear
+                            All</button>
+                    </div>
+                    <div class="filtering_mobile">
+                        <button class="filter_button">Filter</button>
+                    </div>
+                    <div id="filter" class="modal__filter">
+                        <div class="filter__main__modal">
+                            <div class="modal__container" style="margin-top: 50px;">
+                                <div class="one-filter">
+                                    <div class="left-filter">
+                                        <p class="filter-p">Product</p>
+                                        <li class="expand-text" style="display: none;">
+                                            <div class="item">
+                                                <div class="checkbox-rect">
+                                                    <input type="checkbox" id="checkbox-rect11" name="check">
+                                                    <label for="checkbox-rect11">Necklaces</label>
+                                                    <input type="checkbox" id="checkbox-rect12" name="check">
+                                                    <label for="checkbox-rect12">Chokers</label>
+                                                    <input type="checkbox" id="checkbox-rect13" name="check">
+                                                    <label for="checkbox-rect13">Rings</label>
+                                                    <input type="checkbox" id="checkbox-rect14" name="check">
+                                                    <label for="checkbox-rect14">Earrings</label>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="right-filter">
+                                        <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="two-filter">
+                                    <div class="left-filter">
+                                        <p class="filter-p">Material</p>
+                                        <li class="expand-text" style="display: none;">
+                                            <div class="item">
+                                                <div class="checkbox-rect">
+                                                    <input type="checkbox" id="checkbox-rect15" name="check">
+                                                    <label for="checkbox-rect15">Gold</label>
+                                                    <input type="checkbox" id="checkbox-rect16" name="check">
+                                                    <label for="checkbox-rect16">Silver</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="right-filter">
+                                        <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="three-filter">
+                                    <div class="left-filter">
+                                        <p class="filter-p">Collection</p>
+                                        <li class="expand-text" style="display: none;">
+                                            <div class="item">
+                                                <div class="checkbox-rect">
+                                                    <input type="checkbox" id="checkbox-rect17" name="check">
+                                                    <label for="checkbox-rect17">Pink flamingo</label>
+                                                    <input type="checkbox" id="checkbox-rect18" name="check">
+                                                    <label for="checkbox-rect18">Dream</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="right-filter">
+                                        <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="four-filter" style="margin-bottom: 30px;">
+                                    <div class="left-filter">
+                                        <p class="filter-p">Price</p>
+                                        <li class="expand-text" style="display: none; padding-left: 28px;">
+                                            <div class="wrapper-price">
+                                                <div class="price-input_modal">
+                                                    <div class="field">
+                                                        <span>Min</span>
+                                                        <input type="number" class="input-min_modal" value="55">
+                                                    </div>
+                                                    <div class="separator_modal">-</div>
+                                                    <div class="field">
+                                                        <span>Max</span>
+                                                        <input type="number" class="input-max_modal" value="155">
+                                                    </div>
+                                                </div>
+                                                <div class="slider_modal">
+                                                    <div class="progress_modal"></div>
+                                                </div>
+                                                <div class="range-input_modal">
+                                                    <input type="range" class="range-min_modal" min="0" max="155" value="55"
+                                                        step="1">
+                                                    <input type="range" class="range-max_modal" min="0" max="155" value="155"
+                                                        step="1">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="right-filter">
+                                        <img src="imgure/icons/close.svg" class="expand-svg" alt="">
+                                    </div>
+                                </div>
+                                <button class="button_filter_modal"
+                                    style="cursor: pointer; background-color: rgba(168, 123, 98, 1); border: 0; font-family: 'Poppins'; font-size: 16px; line-height: 20.8px; text-align: center; color: white;">Apply</button>
+                                <button class="button_filter_modal button_clear_modal"
+                                    style="cursor: pointer; margin-top: 30px; background-color: white; border: 1px solid rgba(168, 123, 98, 1); font-family: 'Poppins'; font-weight: 500; font-size: 16px; line-height: 20.8px; text-align: center; color: black;">Clear
+                                    All</button>
+                            </div>
+                            <button class="modal__close__filter">&#10006;</button>
+                        </div>
+                    </div>
+                    <div class="all_products">
+                        <div class="product_jewellery" data-category="earrings" data-material="silver"
+                            data-collection="dream" data-price="115">
+                            <img src="imgure/jewellery/double-pearl-earrings (1).jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Double pearl earrings</p>
+                            <p class="price_product_jewellery">$ 115</p>
+                        </div>
+                        <div class="product_jewellery" data-category="chokers" data-material="gold"
+                            data-collection="pink_flamingo" data-price="55">
+                            <img src="imgure/jewellery/black-choker-gold-bead.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Choker with gold bead</p>
+                            <p class="price_product_jewellery">$ 55</p>
+                        </div>
+                        <div class="product_jewellery" data-category="necklaces" data-material="gold"
+                            data-collection="pink_flamingo" data-price="155">
+                            <img src="imgure/jewellery/gold-layered-necklace.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Gold layered necklace</p>
+                            <p class="price_product_jewellery">$ 155</p>
+                        </div>
+                        <div class="product_jewellery" data-category="rings" data-material="silver"
+                            data-collection="dream" data-price="105">
+                            <img src="imgure/jewellery/blue-gemstone-pendant.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Blue gemstone pendant</p>
+                            <p class="price_product_jewellery">$ 105</p>
+                        </div>
+                        <div class="product_jewellery" data-category="earrings" data-material="silver"
+                            data-collection="pink_flamingo" data-price="75">
+                            <img src="imgure/jewellery/boho-earrings.jpg" class="prod_jewellery_img earring">
+                            <p class="name_product_jewellery">Boho earrings</p>
+                            <p class="price_product_jewellery">$ 75</p>
+                        </div>
+                        <div class="product_jewellery" data-category="necklaces" data-material="gold"
+                            data-collection="dream" data-price="135">
+                            <img src="imgure/jewellery/bird-necklace.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Gold bird necklace</p>
+                            <p class="price_product_jewellery">$ 135</p>
+                        </div>
+                        <div class="product_jewellery" data-category="chokers" data-material="silver"
+                            data-collection="pink_flamingo" data-price="85">
+                            <img src="imgure/jewellery/black-leather-choker-necklace (1).jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Black leather choker</p>
+                            <p class="price_product_jewellery">$ 85</p>
+                        </div>
+                        <div class="product_jewellery" data-category="necklaces" data-material="silver"
+                            data-collection="dream" data-price="145">
+                            <img src="imgure/jewellery/purple-gemstone-necklace.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Necklace with amethyst</p>
+                            <p class="price_product_jewellery">$ 145</p>
+                        </div>
+                        <div class="product_jewellery" data-category="earrings" data-material="silver"
+                            data-collection="pink_flamingo" data-price="95">
+                            <img src="imgure/jewellery/elephant-earrings.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Elephant earrings</p>
+                            <p class="price_product_jewellery">$ 95</p>
+                        </div>
+                        <div class="product_jewellery" data-category="necklaces" data-material="silver"
+                            data-collection="dream" data-price="115">
+                            <img src="imgure/jewellery/threader-necklace-closeup.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Threader necklace</p>
+                            <p class="price_product_jewellery">$ 115</p>
+                        </div>
+                        <div class="product_jewellery" data-category="necklaces" data-material="silver"
+                            data-collection="pink_flamingo" data-price="105">
+                            <img src="imgure/jewellery/origami-crane-necklace.jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Origami crane necklace</p>
+                            <p class="price_product_jewellery">$ 105</p>
+                        </div>
+                        <div class="product_jewellery" data-category="earrings" data-material="silver"
+                            data-collection="dream" data-price="95">
+                            <img src="imgure/jewellery/marble-earrings (1).jpg" class="prod_jewellery_img">
+                            <p class="name_product_jewellery">Marble earrings</p>
+                            <p class="price_product_jewellery">$ 95</p>
+                        </div>
+                        <div class="pag">
+                            <div class="left-pag">
+                                <a href class="pag-a"
+                                    style="color: rgba(29, 22, 19, 1); margin: 0; font-weight: 500; padding-left: 50px;">
+                                    Previous</a>
+                            </div>
+                            <div class="center-pag" style="display: flex; margin: 0;">
+                                <a href class="pag-a" style="color: rgba(29,22,19,1); font-weight: 500;">1</a>
+                                <a href class="pag-a" style="color: rgba(155, 153, 151, 1); font-weight: 500;">2</a>
+                                <a href class="pag-a" style="color: rgba(155, 153, 151, 1); font-weight: 500;">3</a>
+                                <a href class="pag-a" style="color: rgba(155, 153, 151, 1); font-weight: 500;">4</a>
+                                <a href class="pag-a" style="color: rgba(155, 153, 151, 1); font-weight: 500;">5</a>
+
+                            </div>
+                            <div class="right-pag" style="padding-right: 50px;">
+                                <a href class="pag-a"
+                                    style="font-weight: 500; color: rgba(29, 22, 19, 1); margin: 0;">Next
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="left-footer">
+            <h1 class="topic-left-footer">The good stuff in your inbox</h1>
+            <p class="descr-left-footer">News and updates from CH. No spam, we promise.</p>
+            <div class="test">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__footer">
+                    <input type="text" class="window_email_form" name="e-mail" placeholder="Your E-mail">
+                </form>
+                <a href
+                    style="color: white; margin-left: 0px; margin-top: 0; margin-right: 0; margin-bottom: 0; border-bottom: 1px solid white;">Sign
+                    Up
+                <span><svg width="30"
+                        style="margin-left: 12px; margin-top: 0; margin-right: 0; margin-bottom: 0;" height="11"
+                        viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector 3.2" d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="white" />
+                    </svg></span></a>
+            </div>
+        </div>
+        <div class="all-table-footer">
+            <div class="one-table-footer">
+                <a href class="one-table-a">Ordering & Payment</a>
+                <a href class="one-table-a">Terms & Conditions</a>
+                <a href class="one-table-a">Returns & Exchanges</a>
+                <a href class="one-table-a">Delivery</a>
+            </div>
+            <div class="two-table-footer">
+                <a href class="two-table-a">About CH</a>
+                <a href class="two-table-a">Stores & Hours</a>
+                <a href class="two-table-a">Jobs</a>
+                <a href class="two-table-a">Contact Us</a>
+            </div>
+            <div class="three-table-footer">
+                <a href class="three-table-a"><span><svg width="15" height="15" viewBox="0 0 8 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M5.33333 8.625H7.2381L8 5.625H5.33333V4.125C5.33333 3.3525 5.33333 2.625 6.85714 2.625H8V0.105C7.75162 0.0727501 6.81371 0 5.82324 0C3.75467 0 2.28571 1.24275 2.28571 3.525V5.625H0V8.625H2.28571V15H5.33333V8.625Z"
+                                fill="white" />
+                        </svg>
+                    </span>Facebook</a>
+                <a href class="three-table-a"><span><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M7.5 0C9.53775 0 9.792 0.00749996 10.5915 0.045C11.3903 0.0825 11.934 0.20775 12.4125 0.39375C12.9075 0.58425 13.3245 0.84225 13.7415 1.2585C14.1229 1.63342 14.418 2.08694 14.6063 2.5875C14.7915 3.06525 14.9175 3.60975 14.955 4.4085C14.9903 5.208 15 5.46225 15 7.5C15 9.53775 14.9925 9.792 14.955 10.5915C14.9175 11.3903 14.7915 11.934 14.6063 12.4125C14.4185 12.9133 14.1233 13.367 13.7415 13.7415C13.3665 14.1227 12.913 14.4178 12.4125 14.6063C11.9347 14.7915 11.3903 14.9175 10.5915 14.955C9.792 14.9903 9.53775 15 7.5 15C5.46225 15 5.208 14.9925 4.4085 14.955C3.60975 14.9175 3.066 14.7915 2.5875 14.6063C2.08674 14.4184 1.63315 14.1232 1.2585 13.7415C0.877055 13.3666 0.581949 12.9131 0.39375 12.4125C0.20775 11.9347 0.0825 11.3903 0.045 10.5915C0.00974996 9.792 0 9.53775 0 7.5C0 5.46225 0.00749996 5.208 0.045 4.4085C0.0825 3.609 0.20775 3.066 0.39375 2.5875C0.581427 2.08663 0.876603 1.63299 1.2585 1.2585C1.63325 0.876923 2.08682 0.581797 2.5875 0.39375C3.066 0.20775 3.609 0.0825 4.4085 0.045C5.208 0.00974996 5.46225 0 7.5 0ZM7.5 3.75C6.50544 3.75 5.55161 4.14509 4.84835 4.84835C4.14509 5.55161 3.75 6.50544 3.75 7.5C3.75 8.49456 4.14509 9.44839 4.84835 10.1517C5.55161 10.8549 6.50544 11.25 7.5 11.25C8.49456 11.25 9.44839 10.8549 10.1517 10.1517C10.8549 9.44839 11.25 8.49456 11.25 7.5C11.25 6.50544 10.8549 5.55161 10.1517 4.84835C9.44839 4.14509 8.49456 3.75 7.5 3.75ZM12.375 3.5625C12.375 3.31386 12.2762 3.0754 12.1004 2.89959C11.9246 2.72377 11.6861 2.625 11.4375 2.625C11.1889 2.625 10.9504 2.72377 10.7746 2.89959C10.5988 3.0754 10.5 3.31386 10.5 3.5625C10.5 3.81114 10.5988 4.0496 10.7746 4.22541C10.9504 4.40123 11.1889 4.5 11.4375 4.5C11.6861 4.5 11.9246 4.40123 12.1004 4.22541C12.2762 4.0496 12.375 3.81114 12.375 3.5625ZM7.5 5.25C8.09674 5.25 8.66903 5.48705 9.09099 5.90901C9.51295 6.33097 9.75 6.90326 9.75 7.5C9.75 8.09674 9.51295 8.66903 9.09099 9.09099C8.66903 9.51295 8.09674 9.75 7.5 9.75C6.90326 9.75 6.33097 9.51295 5.90901 9.09099C5.48705 8.66903 5.25 8.09674 5.25 7.5C5.25 6.90326 5.48705 6.33097 5.90901 5.90901C6.33097 5.48705 6.90326 5.25 7.5 5.25Z"
+                                fill="white" />
+                        </svg>
+                    </span>Instagram</a>
+                <a href class="three-table-a"><span><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M8.52464 0.0700085C6.73009 -0.176851 4.90683 0.233922 3.39151 1.22648C1.8762 2.21903 0.771177 3.72633 0.280492 5.47006C-0.210193 7.21378 -0.0534017 9.07616 0.721915 10.7133C1.49723 12.3504 2.83871 13.6518 4.49864 14.377C4.45375 13.8009 4.49496 13.2213 4.62089 12.6573C4.75964 12.028 5.59289 8.56001 5.59289 8.56001C5.42697 8.18808 5.34405 7.78448 5.34989 7.37726C5.34989 6.26351 5.99264 5.43251 6.79214 5.43251C6.93577 5.43042 7.07817 5.45928 7.20965 5.51713C7.34113 5.57498 7.45861 5.66047 7.5541 5.76778C7.6496 5.87508 7.72087 6.00169 7.76306 6.139C7.80526 6.27631 7.81739 6.42109 7.79864 6.56351C7.79864 7.23851 7.36514 8.26001 7.13864 9.21851C7.09388 9.39429 7.09104 9.57814 7.13035 9.75522C7.16966 9.93231 7.25002 10.0977 7.36496 10.238C7.4799 10.3783 7.6262 10.4897 7.79207 10.5631C7.95793 10.6366 8.13873 10.67 8.31989 10.6608C9.74339 10.6608 10.6974 8.83751 10.6974 6.68501C10.6974 5.03501 9.60464 3.79901 7.59014 3.79901C7.10817 3.78028 6.62743 3.8597 6.17709 4.03245C5.72676 4.2052 5.31623 4.46767 4.97043 4.80392C4.62463 5.14018 4.35078 5.54321 4.16551 5.98854C3.98023 6.43387 3.8874 6.9122 3.89264 7.39451C3.87117 7.9295 4.04377 8.45423 4.37864 8.87201C4.44122 8.91872 4.48691 8.98451 4.50882 9.05946C4.53074 9.1344 4.52769 9.21444 4.50014 9.28751C4.46564 9.42551 4.37864 9.75476 4.34414 9.87551C4.33697 9.91646 4.32027 9.95515 4.29541 9.98847C4.27054 10.0218 4.2382 10.0488 4.20099 10.0673C4.16378 10.0859 4.12273 10.0954 4.08116 10.0952C4.03959 10.0949 3.99865 10.085 3.96164 10.066C2.92364 9.65051 2.43464 8.50826 2.43464 7.20401C2.43464 5.06876 4.22264 2.51276 7.80014 2.51276C10.6471 2.51276 12.5401 4.59551 12.5401 6.82301C12.5401 9.75476 10.9074 11.959 8.49464 11.959C8.13403 11.9705 7.77634 11.891 7.45464 11.7276C7.13294 11.5643 6.85762 11.3224 6.65414 11.0245C6.65414 11.0245 6.22064 12.7615 6.13514 13.09C5.96061 13.6575 5.70307 14.1961 5.37089 14.6883C6.06314 14.8983 6.78239 15.0033 7.50539 15.0003C8.49058 15.001 9.46624 14.8075 10.3765 14.4307C11.2868 14.0539 12.1138 13.5012 12.8102 12.8043C13.5066 12.1075 14.0587 11.2801 14.4348 10.3695C14.811 9.45899 15.0039 8.48319 15.0024 7.49801C15.0015 5.68676 14.3452 3.937 13.1549 2.57184C11.9645 1.20668 10.3204 0.318307 8.52614 0.0707584L8.52464 0.0700085Z"
+                                fill="white" />
+                        </svg>
+
+                    </span>Pinterest</a>
+                <a href class="three-table-a"><span><svg width="15" height="15" viewBox="0 0 15 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M14.9993 1.54324C14.4375 1.80812 13.8417 1.98209 13.2317 2.05937C13.8747 1.64947 14.3559 1.00438 14.5857 0.244297C13.9823 0.627078 13.3207 0.895338 12.6312 1.04045C12.1681 0.512227 11.5542 0.161908 10.885 0.0439529C10.2158 -0.0740019 9.52875 0.047017 8.93073 0.388195C8.33271 0.729374 7.85718 1.2716 7.57809 1.93057C7.29899 2.58954 7.23196 3.32833 7.38741 4.0321C6.16374 3.96673 4.96664 3.62777 3.87384 3.03724C2.78104 2.4467 1.81696 1.6178 1.0442 0.604331C0.770671 1.10512 0.626929 1.67441 0.627698 2.2539C0.627698 3.39126 1.17077 4.39606 1.99642 4.98435C1.50781 4.96795 1.02995 4.8273 0.602679 4.57411V4.6149C0.602826 5.37238 0.848731 6.1065 1.2987 6.69279C1.74867 7.27907 2.37501 7.68144 3.07153 7.83167C2.61795 7.96269 2.14235 7.98201 1.68073 7.88815C1.87711 8.54016 2.25987 9.11038 2.77541 9.51897C3.29095 9.92757 3.91346 10.1541 4.55578 10.1668C3.9174 10.7012 3.18645 11.0963 2.40474 11.3294C1.62303 11.5625 0.805873 11.6291 0 11.5253C1.40676 12.4897 3.04437 13.0017 4.71693 13C10.378 13 13.4738 8.0011 13.4738 3.66579C13.4738 3.5246 13.4701 3.38184 13.4642 3.24222C14.0668 2.778 14.5869 2.20293 15 1.54403L14.9993 1.54324Z"
+                                fill="white" />
+                        </svg>
+                    </span>Twitter</a>
+            </div>
+            <div class="four-table-footer">
+                <a href class="four-table-a"><span><svg width="15" height="15" viewBox="0 0 8 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M5.33333 8.625H7.2381L8 5.625H5.33333V4.125C5.33333 3.3525 5.33333 2.625 6.85714 2.625H8V0.105C7.75162 0.0727501 6.81371 0 5.82324 0C3.75467 0 2.28571 1.24275 2.28571 3.525V5.625H0V8.625H2.28571V15H5.33333V8.625Z"
+                                fill="white" />
+                        </svg>
+                    </span></a>
+                <a href class="four-table-a"><span><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M7.5 0C9.53775 0 9.792 0.00749996 10.5915 0.045C11.3903 0.0825 11.934 0.20775 12.4125 0.39375C12.9075 0.58425 13.3245 0.84225 13.7415 1.2585C14.1229 1.63342 14.418 2.08694 14.6063 2.5875C14.7915 3.06525 14.9175 3.60975 14.955 4.4085C14.9903 5.208 15 5.46225 15 7.5C15 9.53775 14.9925 9.792 14.955 10.5915C14.9175 11.3903 14.7915 11.934 14.6063 12.4125C14.4185 12.9133 14.1233 13.367 13.7415 13.7415C13.3665 14.1227 12.913 14.4178 12.4125 14.6063C11.9347 14.7915 11.3903 14.9175 10.5915 14.955C9.792 14.9903 9.53775 15 7.5 15C5.46225 15 5.208 14.9925 4.4085 14.955C3.60975 14.9175 3.066 14.7915 2.5875 14.6063C2.08674 14.4184 1.63315 14.1232 1.2585 13.7415C0.877055 13.3666 0.581949 12.9131 0.39375 12.4125C0.20775 11.9347 0.0825 11.3903 0.045 10.5915C0.00974996 9.792 0 9.53775 0 7.5C0 5.46225 0.00749996 5.208 0.045 4.4085C0.0825 3.609 0.20775 3.066 0.39375 2.5875C0.581427 2.08663 0.876603 1.63299 1.2585 1.2585C1.63325 0.876923 2.08682 0.581797 2.5875 0.39375C3.066 0.20775 3.609 0.0825 4.4085 0.045C5.208 0.00974996 5.46225 0 7.5 0ZM7.5 3.75C6.50544 3.75 5.55161 4.14509 4.84835 4.84835C4.14509 5.55161 3.75 6.50544 3.75 7.5C3.75 8.49456 4.14509 9.44839 4.84835 10.1517C5.55161 10.8549 6.50544 11.25 7.5 11.25C8.49456 11.25 9.44839 10.8549 10.1517 10.1517C10.8549 9.44839 11.25 8.49456 11.25 7.5C11.25 6.50544 10.8549 5.55161 10.1517 4.84835C9.44839 4.14509 8.49456 3.75 7.5 3.75ZM12.375 3.5625C12.375 3.31386 12.2762 3.0754 12.1004 2.89959C11.9246 2.72377 11.6861 2.625 11.4375 2.625C11.1889 2.625 10.9504 2.72377 10.7746 2.89959C10.5988 3.0754 10.5 3.31386 10.5 3.5625C10.5 3.81114 10.5988 4.0496 10.7746 4.22541C10.9504 4.40123 11.1889 4.5 11.4375 4.5C11.6861 4.5 11.9246 4.40123 12.1004 4.22541C12.2762 4.0496 12.375 3.81114 12.375 3.5625ZM7.5 5.25C8.09674 5.25 8.66903 5.48705 9.09099 5.90901C9.51295 6.33097 9.75 6.90326 9.75 7.5C9.75 8.09674 9.51295 8.66903 9.09099 9.09099C8.66903 9.51295 8.09674 9.75 7.5 9.75C6.90326 9.75 6.33097 9.51295 5.90901 9.09099C5.48705 8.66903 5.25 8.09674 5.25 7.5C5.25 6.90326 5.48705 6.33097 5.90901 5.90901C6.33097 5.48705 6.90326 5.25 7.5 5.25Z"
+                                fill="white" />
+                        </svg>
+                    </span></a>
+                <a href class="four-table-a"><span><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M8.52464 0.0700085C6.73009 -0.176851 4.90683 0.233922 3.39151 1.22648C1.8762 2.21903 0.771177 3.72633 0.280492 5.47006C-0.210193 7.21378 -0.0534017 9.07616 0.721915 10.7133C1.49723 12.3504 2.83871 13.6518 4.49864 14.377C4.45375 13.8009 4.49496 13.2213 4.62089 12.6573C4.75964 12.028 5.59289 8.56001 5.59289 8.56001C5.42697 8.18808 5.34405 7.78448 5.34989 7.37726C5.34989 6.26351 5.99264 5.43251 6.79214 5.43251C6.93577 5.43042 7.07817 5.45928 7.20965 5.51713C7.34113 5.57498 7.45861 5.66047 7.5541 5.76778C7.6496 5.87508 7.72087 6.00169 7.76306 6.139C7.80526 6.27631 7.81739 6.42109 7.79864 6.56351C7.79864 7.23851 7.36514 8.26001 7.13864 9.21851C7.09388 9.39429 7.09104 9.57814 7.13035 9.75522C7.16966 9.93231 7.25002 10.0977 7.36496 10.238C7.4799 10.3783 7.6262 10.4897 7.79207 10.5631C7.95793 10.6366 8.13873 10.67 8.31989 10.6608C9.74339 10.6608 10.6974 8.83751 10.6974 6.68501C10.6974 5.03501 9.60464 3.79901 7.59014 3.79901C7.10817 3.78028 6.62743 3.8597 6.17709 4.03245C5.72676 4.2052 5.31623 4.46767 4.97043 4.80392C4.62463 5.14018 4.35078 5.54321 4.16551 5.98854C3.98023 6.43387 3.8874 6.9122 3.89264 7.39451C3.87117 7.9295 4.04377 8.45423 4.37864 8.87201C4.44122 8.91872 4.48691 8.98451 4.50882 9.05946C4.53074 9.1344 4.52769 9.21444 4.50014 9.28751C4.46564 9.42551 4.37864 9.75476 4.34414 9.87551C4.33697 9.91646 4.32027 9.95515 4.29541 9.98847C4.27054 10.0218 4.2382 10.0488 4.20099 10.0673C4.16378 10.0859 4.12273 10.0954 4.08116 10.0952C4.03959 10.0949 3.99865 10.085 3.96164 10.066C2.92364 9.65051 2.43464 8.50826 2.43464 7.20401C2.43464 5.06876 4.22264 2.51276 7.80014 2.51276C10.6471 2.51276 12.5401 4.59551 12.5401 6.82301C12.5401 9.75476 10.9074 11.959 8.49464 11.959C8.13403 11.9705 7.77634 11.891 7.45464 11.7276C7.13294 11.5643 6.85762 11.3224 6.65414 11.0245C6.65414 11.0245 6.22064 12.7615 6.13514 13.09C5.96061 13.6575 5.70307 14.1961 5.37089 14.6883C6.06314 14.8983 6.78239 15.0033 7.50539 15.0003C8.49058 15.001 9.46624 14.8075 10.3765 14.4307C11.2868 14.0539 12.1138 13.5012 12.8102 12.8043C13.5066 12.1075 14.0587 11.2801 14.4348 10.3695C14.811 9.45899 15.0039 8.48319 15.0024 7.49801C15.0015 5.68676 14.3452 3.937 13.1549 2.57184C11.9645 1.20668 10.3204 0.318307 8.52614 0.0707584L8.52464 0.0700085Z"
+                                fill="white" />
+                        </svg>
+
+                    </span></a>
+                <a href class="four-table-a"><span><svg width="15" height="15" viewBox="0 0 15 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector"
+                                d="M14.9993 1.54324C14.4375 1.80812 13.8417 1.98209 13.2317 2.05937C13.8747 1.64947 14.3559 1.00438 14.5857 0.244297C13.9823 0.627078 13.3207 0.895338 12.6312 1.04045C12.1681 0.512227 11.5542 0.161908 10.885 0.0439529C10.2158 -0.0740019 9.52875 0.047017 8.93073 0.388195C8.33271 0.729374 7.85718 1.2716 7.57809 1.93057C7.29899 2.58954 7.23196 3.32833 7.38741 4.0321C6.16374 3.96673 4.96664 3.62777 3.87384 3.03724C2.78104 2.4467 1.81696 1.6178 1.0442 0.604331C0.770671 1.10512 0.626929 1.67441 0.627698 2.2539C0.627698 3.39126 1.17077 4.39606 1.99642 4.98435C1.50781 4.96795 1.02995 4.8273 0.602679 4.57411V4.6149C0.602826 5.37238 0.848731 6.1065 1.2987 6.69279C1.74867 7.27907 2.37501 7.68144 3.07153 7.83167C2.61795 7.96269 2.14235 7.98201 1.68073 7.88815C1.87711 8.54016 2.25987 9.11038 2.77541 9.51897C3.29095 9.92757 3.91346 10.1541 4.55578 10.1668C3.9174 10.7012 3.18645 11.0963 2.40474 11.3294C1.62303 11.5625 0.805873 11.6291 0 11.5253C1.40676 12.4897 3.04437 13.0017 4.71693 13C10.378 13 13.4738 8.0011 13.4738 3.66579C13.4738 3.5246 13.4701 3.38184 13.4642 3.24222C14.0668 2.778 14.5869 2.20293 15 1.54403L14.9993 1.54324Z"
+                                fill="white" />
+                        </svg>
+                    </span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

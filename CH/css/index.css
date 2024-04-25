@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.marker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.search-img__hero {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.type_here__form {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: black;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.modal__container {
+    padding: 30px;
+}
+
+.type_here__form__burger {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: white;
+    border: 0;
+    background-color: transparent;
+}
+
+.modal__login__email {
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: rgba(155, 153, 151, 1);
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(29, 22, 19, 1);
+    width: 100%;
+}
+
+.modal__login__password {
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: rgba(155, 153, 151, 1);
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(29, 22, 19, 1);
+    width: 100%;
+}
+
+.header {
+    height: 115px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: white;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-hero {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.search__hero {
+    display: flex;
+}
+
+.search__hero__burger {
+    display: flex;
+}
+
+.logo__search__hero,
+.logo__search__hero__burger {
+    margin-right: 10px;
+}
+
+.nav-list {
+    display: flex;
+    padding-left: 0px;
+}
+
+.nav-item-text {
+    color: rgba(29, 22, 19, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-list {
+    display: flex;
+    padding: 0;
+}
+
+.main-item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.slide-img {
+    margin-bottom: 15px;
+    margin: 0;
+    max-width: 100%;
+    width: 240px;
+}
+
+.main__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.main-list-burger {
+    padding-left: 0;
+}
+
+.main__nav-burger {
+    display: flex;
+    justify-content: start;
+}
+
+.section-main {
+    padding-top: 15px;
+}
+
+.main-item-text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: rgba(29, 22, 19, 1);
+}
+
+.main-item-text-burger {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.subtitle-item-text-burger {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.main__nav-burger {
+    display: none;
+}
+
+.photo-main {
+    padding-bottom: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.p-newin {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 130px;
+}
+
+.p-innew:not(:last-child) {
+    margin-right: 15px;
+}
+
+.main-item-burger {
+    margin-top: 20px;
+}
+
+.subtitle-main-item-burger {
+    margin-top: 15px;
+}
+
+.blog_text {
+    text-align: center;
+}
+
+.photo_main {
+    background: url('../imgure/background/111.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 463px;
+    width: 100%;
+    margin-bottom: 130px;
+    background-size: cover;
+}
+
+.albums {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 130px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.nav-item-text {
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: rgba(29, 22, 19, 1);
+}
+
+.photos_chjewellery {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+}
+
+.photo_chjewellery {
+    height: auto;
+    width: 230px;
+    object-fit: cover;
+}
+
+.p-innew-4, .p-innew-5, .p-innew-6 {
+    display: none;
+}
+
+.footer {
+    width: auto;
+    height: 100%;
+    background-color: black;
+    margin-top: 132px;
+    margin-bottom: 0px;
+    padding-bottom: 70px;
+}
+
+.topic-left-footer {
+    color: white;
+    font-size: 34px;
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    line-height: 44.20px;
+    letter-spacing: 1.02px;
+    word-wrap: break-word;
+    padding-left: 98px;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.descr-left-footer {
+    text-align: center;
+    color: #9B9997;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: 20.80px;
+    word-wrap: break-word;
+    padding-left: 59px;
+    padding-top: 15px;
+    margin: 0;
+    margin-bottom: 79px;
+}
+
+.form__footer {
+    margin-left: 58px;
+    border-bottom: 1px solid white;
+}
+
+.window_email_form {
+    background: transparent;
+    border: 0;
+    margin-bottom: 10px;
+    padding-right: 220px;
+    margin-right: 10px;
+    color: white;
+    outline: none;
+}
+
+.test {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
+
+.one-table-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 92px;
+    flex-wrap: wrap;
+}
+
+.two-table-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 80px;
+    flex-wrap: wrap;
+}
+
+.three-table-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 80px;
+    flex-wrap: wrap;
+}
+
+.four-table-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 80px;
+    flex-wrap: wrap;
+}
+
+.title_slide {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: rgba(29,22,19,1);
+}
+
+.subtitle_slide {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgba(29,22,19,1);
+}
+
+.one-table-footer a,
+.two-table-footer a,
+.three-table-footer a {
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 20.80px;
+    word-wrap: break-word;
+}
+
+.one-table-a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.four_chjewellery,
+.three_chjewellery,
+.one_chjewellery {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo_chjewellery-2 {
+    max-width: 399px;
+    width: 100%;
+    max-height: 412px;
+}
+
+.table-img {
+    max-width: 285px;
+    width: 100%;
+    max-height: 300px;
+}
+
+.all-table-footer {
+    display: flex;
+}
+
+.two-table-a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.three-table-a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.four-table-a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.descr_main {
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.four-table-footer {
+    display: none;
+}
+
+.three-album-img {
+    max-width: 570px;
+    max-height: 630px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.table-questions-all {
+    align-items: center;
+}
+
+.table-asked-text {
+    padding-top: 50px;
+    padding-left: 38px;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #1D1613;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 23.40px;
+}
+
+.expand-text {
+    padding-top: 0px;
+    padding-left: 38px;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #1D1613;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 23.40px;
+}
+
+.expand-svg {
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 55px;
+}
+
+.asnwer-to-ask-text {
+    padding-top: 50px;
+    padding-left: 38px;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #1D1613;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 23.40px;
+}
+
+.main__nav-burger.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.main__nav-burger {
+    display: flex;
+    position: fixed;
+    top: 113px;
+    left: 0;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    padding: 2rem;
+    opacity: 0;
+    background: rgba(168, 123, 98, 1);
+    visibility: hidden;
+    transform: translateY(-200%);
+    transition: opacity 0.3s, visibility 0.2s ease, transform 0.3s ease;
+    padding-top: 28px;
+}
+
+.bag,
+.burger {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.modal__main {
+    position: relative;
+    max-width: 600px;
+    background-color: rgba(240, 234, 228, 1);
+    margin: auto;
+    color: #000;
+    cursor: default;
+    padding-bottom: 30px;
+}
+
+.submit__login {
+    height: 68px;
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(168, 123, 98, 1);
+}
+
+.modal__title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+}
+
+.modal__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 1275px) {
+    .photo_chjewellery {
+        max-width: 100%;
+    }
+
+    .photo_chjewellery-2 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1237px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .topic-left-footer,
+    .descr-left-footer {
+        padding-left: 0px;
+    }
+
+    .topic-left-footer {
+        padding-top: 60px;
+    }
+
+    .descr-left-footer {
+        margin-bottom: 52px;
+    }
+
+    .test {
+        justify-content: center;
+    }
+
+    .form__footer {
+        margin: 0;
+    }
+
+    .window_email_form {
+        padding-right: 100px;
+    }
+
+    .all-table-footer {
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+
+    .one-table-footer {
+        padding-top: 50px;
+        padding-left: 0;
+        align-items: start;
+    }
+
+    .two-table-footer {
+        padding-top: 50px;
+        padding-left: 0;
+        align-items: start;
+    }
+
+    .three-table-footer {
+        padding-top: 50px;
+        padding-left: 0;
+        align-items: start;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .logo__search__hero {
+        display: none;
+    }
+
+    .form__hero {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .container-hero {
+        justify-content: space-between;
+    }
+
+    .bag,
+    .burger {
+        display: block;
+    }
+
+    .main-item-text {
+        display: none;
+    }
+
+    .one-table {
+        flex-direction: column;
+    }
+
+    .two-table {
+        flex-direction: column;
+    }
+
+    .three-album-img {
+        max-width: 290px;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .topic-left-footer {
+        padding-top: 60px;
+        text-align: start;
+    }
+
+    .descr-left-footer {
+        margin-bottom: 52px;
+        text-align: start;
+    }
+
+    .test {
+        justify-content: start;
+    }
+
+    .window_email_form {
+        padding-right: 15px;
+    }
+
+    .all-table-footer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .three-table-footer {
+        display: none;
+    }
+
+    .four-table-footer {
+        display: flex;
+        padding-left: 0;
+        align-items: start;
+        flex-direction: row;
+    }
+
+    .photos_chjewellery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo_chjewellery {
+        max-width: 133px;
+        width: 100%;
+    }
+
+    .photo_chjewellery-2 {
+        max-width: 133px;
+        width: 100%;
+    }
+
+    .marker {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .slides {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .slide {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .p-innew-4, .p-innew-5, .p-innew-6 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .slide {
+        word-break: break-word;
+    }
+    .slide-img {
+        width: 130px;
+    }
+    .title_slide, .subtitle_slide {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .slides {
+        flex-direction: column;
+    }
+}
